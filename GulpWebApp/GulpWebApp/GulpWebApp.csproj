@@ -117,8 +117,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="aaa.html" />
     <Content Include="Global.asax" />
-    <Content Include="GulpFile.js" />
+    <Content Include="gulpfile.js" />
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="Web.config" />
@@ -133,9 +134,7 @@
   <ItemGroup>
     <Content Include="Views\web.config" />
     <Content Include="packages.config" />
-    <Content Include="ApplicationInsights.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <None Include="Properties\PublishProfiles\Staging.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -147,6 +146,9 @@
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
